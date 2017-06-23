@@ -1,0 +1,8 @@
+[user]
+	name = mkoertgen
+    useconfigonly = true
+	
+[includeIf "gitdir:work/**"]
+    path = .gitconfig.work
+[includeIf "gitdir:oss/**"]
+    path = .gitconfig.oss
