@@ -1,8 +1,23 @@
 [user]
-	name = mkoertgen
+    name = mkoertgen
     useconfigonly = true
-	
+    
 [includeIf "gitdir:work/**"]
     path = .gitconfig.work
 [includeIf "gitdir:oss/**"]
     path = .gitconfig.oss
+
+[alias]
+    co = checkout
+    ci = commit
+    am = commit --amend --no-edit
+    pl = pull
+    plr = pull --rebase
+    plff = pull --ff-only
+    st = status
+    ls = log --pretty=format:\"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d\" --decorate
+    ll = ls --numstat
+    ignore = update-index --assume-unchanged
+    unignore = update-index --really-refresh
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    rem = restore --staged
