@@ -1,5 +1,5 @@
 [user]
-    name = mkoertgen
+    name = "Marcel Körtgen"
     useconfigonly = true
     
 [includeIf "gitdir:work/**"]
@@ -8,16 +8,34 @@
     path = .gitconfig.oss
 
 [alias]
-    co = checkout
-    ci = commit
-    am = commit --amend --no-edit
-    pl = pull
-    plr = pull --rebase
-    plff = pull --ff-only
-    st = status
     ls = log --pretty=format:\"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d\" --decorate
     ll = ls --numstat
     ignore = update-index --assume-unchanged
     unignore = update-index --really-refresh
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
     rem = restore --staged
+	
+    # ---
+    # https://gist.github.com/mwhite/6887990
+    a = add
+	ap = add -p
+	
+    c = commit --verbose
+	ca = commit -a --verbose
+	cm = commit -m
+	cam = commit -a -m
+	m = commit --amend --verbose
+    #am = commit --amend --no-edit # Caution (at least on Windows!)
+    
+    d = diff
+    ds = diff --stat
+    dc = diff --cached	
+
+	s = status -s	
+    co = checkout
+	cob = checkout -b	
+	
+    pl = pull
+    plr = pull --rebase
+    plff = pull --ff-only
+	#-----
