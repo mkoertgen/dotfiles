@@ -34,7 +34,8 @@
     s = status -s	
     co = checkout
     cob = checkout -b	
-    
+
+    f = fetch    
     p = push
     pl = pull
     plr = pull --rebase
