@@ -35,7 +35,9 @@
     co = checkout
     cob = checkout -b	
     
+    p = push
     pl = pull
     plr = pull --rebase
     plff = pull --ff-only
     #-----
+	alias = config --get-regexp ^alias
