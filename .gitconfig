@@ -31,7 +31,7 @@
     ds = diff --stat
     dc = diff --cached	
 
-    s = status -s	
+    s = status
     co = checkout
     cob = checkout -b	
 
@@ -41,4 +41,16 @@
     plr = pull --rebase
     plff = pull --ff-only
     #-----
-	alias = config --get-regexp ^alias
+    a = config --get-regexp ^alias
+
+# Set VSCODE default editor, cf.: https://roboleary.net/vscode/2020/09/15/vscode-git.html
+[core]
+  editor = code --wait
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
