@@ -17,7 +17,7 @@
     
     # ---
     # https://gist.github.com/mwhite/6887990
-    a = add
+    #a = add
     ap = add -p
     
     c = commit --verbose
@@ -39,7 +39,7 @@
     p = push
     pl = pull
     plr = pull --rebase
-    plff = pull --ff-only
+    plf = pull --ff-only
     #-----
     a = config --get-regexp ^alias
 
