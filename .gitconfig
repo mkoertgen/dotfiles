@@ -46,6 +46,7 @@
 # Set VSCODE default editor, cf.: https://roboleary.net/vscode/2020/09/15/vscode-git.html
 [core]
   editor = code --wait
+  longpaths = true
 [diff]
   tool = vscode
 [difftool "vscode"]
