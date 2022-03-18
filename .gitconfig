@@ -8,6 +8,7 @@
     path = .gitconfig.oss
 
 [alias]
+    l = log -1 --oneline
     ls = log --pretty=format:\"%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]\\%Cred%d\" --decorate
     ll = ls --numstat
     ignore = update-index --assume-unchanged
