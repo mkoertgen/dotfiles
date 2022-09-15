@@ -33,6 +33,7 @@
     dc = diff --cached	
 
     s = status
+    sw = switch
     co = checkout
     cob = checkout -b	
 
