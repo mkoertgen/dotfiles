@@ -19,7 +19,10 @@
     # ---
     # https://gist.github.com/mwhite/6887990
     #a = add
+    a = config --get-regexp ^alias
     ap = add -p
+
+    b = branch        
     
     c = commit --verbose
     ca = commit -a --verbose
@@ -44,7 +47,6 @@
     plr = pull --rebase
     plf = pull --ff-only
     #-----
-    a = config --get-regexp ^alias
 
 # Set VSCODE default editor, cf.: https://roboleary.net/vscode/2020/09/15/vscode-git.html
 [core]
