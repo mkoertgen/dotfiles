@@ -47,7 +47,7 @@
     plr = pull --rebase
     plf = pull --ff-only
 
-    r = remote
+    r = remote -v
     #-----
 
 # Set VSCODE default editor, cf.: https://roboleary.net/vscode/2020/09/15/vscode-git.html
