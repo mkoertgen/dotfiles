@@ -10,7 +10,7 @@ Marcel uses [home-manager](https://github.com/nix-community/home-manager) with N
 
 - **URL:** https://github.com/mkoertgen/dotfiles
 - **Local path (WSL):** `~/git/oss/mkoertgen/dotfiles`
-- **Branch:** `master` (→ TODO: switch to `main`)
+- **Branch:** `main`
 
 ## Structure
 
@@ -71,8 +71,3 @@ nix run home-manager -- switch --flake . -b backup
 ├── oss/         → .gitconfig.oss (gmail.com)
 └── private/     → (not configured)
 ```
-
-## TODOs
-
-- [ ] Switch branch from `master` to `main`
-- [ ] Clean up legacy files (.gitconfig, .zshrc, .bashrc) if unused
