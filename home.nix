@@ -21,6 +21,14 @@
     # Nix tools
     direnv
     nix-direnv
+
+    # Container & Kubernetes
+    kubectl
+    kubectx  # includes kubens
+    kubernetes-helm
+
+    # IaC
+    opentofu
   ];
 
   # ============================================================================
@@ -108,6 +116,26 @@
       ll = "ls -la";
       g = "git";
       hms = "home-manager switch --flake ~/git/oss/mkoertgen/dotfiles -b backup";
+
+      # Docker
+      d = "docker";
+      dc = "docker compose";
+
+      # Kubernetes
+      k = "kubectl";
+      kx = "kubectx";
+      kns = "kubens";
+      kgp = "kubectl get pods";
+      kgs = "kubectl get svc";
+      kgd = "kubectl get deployments";
+      kga = "kubectl get all";
+      kd = "kubectl describe";
+      kl = "kubectl logs";
+      klf = "kubectl logs -f";
+      ke = "kubectl exec -it";
+
+      # IaC
+      tf = "tofu";
     };
     
     initExtra = ''
