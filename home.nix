@@ -17,6 +17,8 @@
     bat
     htop
     tree
+    uv          # Fast Python package manager
+    nushell     # Modern structured data shell
 
     # Nix tools
     direnv
